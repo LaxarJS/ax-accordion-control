@@ -1,0 +1,8 @@
+{
+   "name": "AxAccordionControl",
+   "description": "An accordion control.",
+
+   "integration": {
+      "technology": "angular"
+   }
+}
