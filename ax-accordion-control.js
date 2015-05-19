@@ -6,8 +6,9 @@
 define( [
    'angular',
    'laxar',
-   'jquery_ui/accordion'
-], function( ng, ax ) {
+   'jquery',
+   'jquery-ui/ui/accordion'
+], function( ng, ax, $ ) {
    'use strict';
 
    var directiveName = 'axAccordion';
@@ -30,7 +31,7 @@ define( [
             var getSelectedPanel = $parse( attrs.axAccordionSelectedPanel );
             var setSelectedPanel = getSelectedPanel.assign || function() {};
 
-            var refresh = ax.fn.debounce( function() { element.accordion( refresh ); }, 100 );
+            var refresh = ax.fn.debounce( function() { $( element ).accordion( refresh ); }, 100 );
             var options = ax.object.options( scope.$eval( attrs[ directiveName ] ), {
                duration: 400,
                active: getSelectedPanel( scope ) || 0
@@ -44,19 +45,19 @@ define( [
             var doneInitializing = scope.$watch( function() {
                doneInitializing();
 
-               element.accordion( options );
+               $( element ).accordion( options );
                element.removeClass( 'ax-invisible' );
 
                $window.setTimeout( function() {
                   // re-enable animations after initial selection has taken place
-                  element.accordion( 'option', 'animate', animate );
+                  $( element ).accordion( 'option', 'animate', animate );
                } );
 
                ///////////////////////////////////////////////////////////////////////////////////////////////
 
                scope.$watch( attrs.axAccordionSelectedPanel, function( newIndex ) {
                   if( newIndex !== uiIndex ) {
-                     element.accordion( 'option', 'active', newIndex );
+                     $( element ).accordion( 'option', 'active', newIndex );
                   }
                } );
 
@@ -64,7 +65,7 @@ define( [
 
                scope.$on( 'axAccordion.options', function( event, options ) {
                   ng.forEach( options, function( value, key ) {
-                     element.accordion( 'option', key, value );
+                     $( element ).accordion( 'option', key, value );
                   } );
                } );
 
@@ -73,7 +74,7 @@ define( [
             //////////////////////////////////////////////////////////////////////////////////////////////////
 
             function beforeActivate( event, ui ) {
-               var index = element.find( element.accordion( 'option', 'header' ) ).index( ui.newHeader );
+               var index = element.find( $( element ).accordion( 'option', 'header' ) ).index( ui.newHeader );
                if( uiIndex === index ) {
                   return;
                }
