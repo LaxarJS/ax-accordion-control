@@ -1,6 +1,6 @@
 # AxAccordionControl
 
-> A wrapper around the [jQuery UI accordion control](https://jqueryui.com/accordion/) as an AngularJS directive, for LaxarJS widgets
+> Wraps the [jQuery UI accordion component](https://jqueryui.com/accordion/) as an AngularJS directive, for LaxarJS widgets.
 
 ## Installation
 
@@ -9,7 +9,7 @@ For general information on installing, styling and optimizing controls, have a l
 
 ### Setup Using Bower
 
-Install the control:
+Install the control into your LaxarJS application:
 
 ```sh
 bower install laxar-accordion-control

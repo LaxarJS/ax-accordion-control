@@ -1,6 +1,5 @@
 {
    "name": "ax-accordion-control",
-   "description": "An accordion control.",
 
    "integration": {
       "technology": "angular"
