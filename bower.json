@@ -13,7 +13,7 @@
       "bower_components"
    ],
    "dependencies": {
-      "laxar": "^1.0.0-alpha.13",
+      "laxar": "^1.0.0",
       "jquery": "^1.11.x",
       "jquery-ui": "^1.11.x"
    }
