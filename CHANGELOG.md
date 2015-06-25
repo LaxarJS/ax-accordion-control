@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v1.0.1
+
 - [#3](https://github.com/LaxarJS/ax-accordion-control/issues/3): cleared timeout on destroy
 
 
