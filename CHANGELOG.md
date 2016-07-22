@@ -2,6 +2,7 @@
 
 ## Last Changes
 
+- [#5](https://github.com/LaxarJS/ax-accordion-control/issues/5): fixed jQuery dependency
 - [#4](https://github.com/LaxarJS/ax-accordion-control/issues/4): fixed jQuery UI "minor" dependency
 - [#3](https://github.com/LaxarJS/ax-accordion-control/issues/3): cleared timeout on destroy
 
