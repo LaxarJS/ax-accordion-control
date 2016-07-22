@@ -2,6 +2,8 @@
 
 ## Last Changes
 
+- [#5](https://github.com/LaxarJS/ax-accordion-control/issues/5): fixed jQuery dependency
+
 
 ## v1.0.2
 
