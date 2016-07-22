@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v1.0.2
+
 - [#4](https://github.com/LaxarJS/ax-accordion-control/issues/4): fixed jQuery UI "minor" dependency
 
 
