@@ -32,7 +32,7 @@ define( [
             var getSelectedPanel = $parse( attrs.axAccordionSelectedPanel );
             var setSelectedPanel = getSelectedPanel.assign || function() {};
 
-            var refresh = ax.fn.debounce( function() { $( element ).accordion( refresh ); }, 100 );
+            var refresh = function() { $( element ).accordion( refresh ); };
             var options = ax.object.options( scope.$eval( attrs[ directiveName ] ), {
                duration: 400,
                active: getSelectedPanel( scope ) || 0
@@ -80,12 +80,16 @@ define( [
             //////////////////////////////////////////////////////////////////////////////////////////////////
 
             function beforeActivate( event, ui ) {
-               var index = element.find( $( element ).accordion( 'option', 'header' ) ).index( ui.newHeader );
+               var jqElement = $( element );
+               var elements = jqElement.accordion( 'option', 'header' );
+               console.log( "Before Activate", elements );
+               var index = jqElement.find( elements ).index( ui.newHeader );
                if( uiIndex === index ) {
                   return;
                }
 
                var result = parsedOnBeforeActivate( scope, { index: index, scope: scope } );
+               console.log( "Before Activate: result", result );
                if( result === false ) {
                   event.preventDefault();
                }
