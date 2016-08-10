@@ -82,14 +82,12 @@ define( [
             function beforeActivate( event, ui ) {
                var jqElement = $( element );
                var elements = jqElement.accordion( 'option', 'header' );
-               console.log( "Before Activate", elements );
                var index = jqElement.find( elements ).index( ui.newHeader );
                if( uiIndex === index ) {
                   return;
                }
 
                var result = parsedOnBeforeActivate( scope, { index: index, scope: scope } );
-               console.log( "Before Activate: result", result );
                if( result === false ) {
                   event.preventDefault();
                }
