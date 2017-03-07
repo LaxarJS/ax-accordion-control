@@ -1,29 +1,40 @@
-# AxAccordionControl
+# laxar-accordion-control
 
-> Wraps the [jQuery UI accordion component](https://jqueryui.com/accordion/) as an AngularJS directive, for LaxarJS widgets.
+> Wraps the [jQuery UI accordion](https://jqueryui.com/accordion/) as an AngularJS v1 directive, for LaxarJS widgets.
+
 
 ## Installation
 
-To retrieve a copy of this control you can either clone it directly using git or alternatively install it via Bower.
-For general information on installing, styling and optimizing controls, have a look at the [LaxarJS documentation](https://github.com/LaxarJS/laxar/blob/master/docs/manuals/installing_controls.md).
+To use this control you should install it into your LaxarJS v2 project:
 
-### Setup Using Bower
-
-Install the control into your LaxarJS application:
-
-```sh
-bower install laxar-accordion-control
+```console
+npm install laxar-accordion-control
 ```
 
-Make sure that `jquery` and `jquery-ui` can be found by RequireJS.
-For example, assuming that your `baseUrl` is `'bower_components'`, add the following to the `paths` section of your `require_config.js`:
+This control requires jQuery UI and only works for LaxarJS widget that are targeting AngularJS v1.
 
-```js
-jquery: 'jquery/dist/jquery'
-```
 
-Now you may reference the control from the `widget.json` of your widget:
- 
+### Usage
+
+Reference the control from the `widget.json` descriptor of your widget:
+
 ```json
 "controls": [ "laxar-accordion-control" ]
 ```
+
+Now you should be able to use `ax-accordion` in your HTML widget template:
+
+```html
+<div ax-accordion="{ duration: 200 }">
+   <div class="ax-accordion-group">
+      <div>First Panel Title</div>
+      <div>Contents of first panel</div>
+   </div>
+   <div class="ax-accordion-group">
+      <div>Second Panel Title</div>
+      <div>Contents of second panel</div>
+   </div>
+</div>
+```
+
+The directive attribute can be used to specify options for the jQuery UI accordion.
