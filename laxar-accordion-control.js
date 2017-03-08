@@ -6,7 +6,7 @@
 import * as ng from 'angular';
 import * as $ from 'jquery';
 import * as debounce from 'lodash.debounce';
-import 'jquery-ui/ui/accordion';
+import 'jquery-ui/ui/widgets/accordion';
 
 const DEBOUNCE_TIME_MS = 100;
 const directiveName = 'axAccordion';

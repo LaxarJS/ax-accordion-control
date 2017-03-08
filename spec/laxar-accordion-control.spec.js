@@ -6,14 +6,14 @@
  */
 import * as ng from 'angular';
 import 'angular-mocks';
-import name from '../laxar-accordion-control';
+import { name } from '../laxar-accordion-control';
 
 describe( 'The laxar-accordion-control', () => {
 
    beforeEach( ng.mock.module( name ) );
 
    let scope;
-   beforeEach( ng.mocks.inject( ( $compile, $rootScope ) => {
+   beforeEach( ng.mock.inject( ( $compile, $rootScope ) => {
       scope = $rootScope.$new();
       const htmlTemplate = `
          <div ax-accordion>
