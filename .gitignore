@@ -1,7 +1,6 @@
 .idea
 .sass-cache
 test-results.xml
-/npm-debug.log
-/node_modules
 /dist
-/spec-output
+/node_modules
+/npm-debug.log
