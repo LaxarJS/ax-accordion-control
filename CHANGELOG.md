@@ -3,6 +3,11 @@
 ## Last Changes
 
 
+## v2.0.0-alpha.2
+
+- [#8](https://github.com/LaxarJS/ax-accordion-control/issues/8): declared .npmignore
+
+
 ## v2.0.0-alpha.1
 
 - [#7](https://github.com/LaxarJS/ax-accordion-control/issues/7): declared some peers as dependencies
