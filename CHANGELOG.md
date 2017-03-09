@@ -2,6 +2,9 @@
 
 ## Last Changes
 
+
+## v2.0.0-alpha.1
+
 - [#7](https://github.com/LaxarJS/ax-accordion-control/issues/7): declared some peers as dependencies
 
 
