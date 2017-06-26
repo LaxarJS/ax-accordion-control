@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LaxarJS/ax-accordion-control.git"
+    "url": "https://github.com/LaxarJS/laxar-accordion-control.git"
   },
   "scripts": {
     "prepublish": "npm run dist",
@@ -43,7 +43,7 @@
     "laxar": "^2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/LaxarJS/ax-accordion-control/issues",
+    "url": "https://github.com/LaxarJS/laxar-accordion-control/issues",
     "email": "info@laxarjs.org"
   }
 }

@@ -8,9 +8,10 @@
 To use this control you should install it into your LaxarJS v2 project:
 
 ```console
-npm install laxar-accordion-control
+npm install --save laxar-accordion-control
 ```
 
+Because the control uses SCSS for styling, you project should be setup to process it, for example using webpack.
 This control requires jQuery UI and only works for LaxarJS widget that are targeting AngularJS v1.
 
 
@@ -22,7 +23,7 @@ Reference the control from the `widget.json` descriptor of your widget:
 "controls": [ "laxar-accordion-control" ]
 ```
 
-Now you should be able to use `ax-accordion` in your HTML widget template:
+Now you should be able to use the `ax-accordion` directive in your HTML widget template:
 
 ```html
 <div ax-accordion="{ duration: 200 }">
