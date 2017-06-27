@@ -2,7 +2,8 @@
 
 ## Last Changes
 
-- [#8](https://github.com/LaxarJS/laxar-accordion-control/issues/9): renamed repository to match artifact name
+- [#10](https://github.com/LaxarJS/laxar-accordion-control/issues/10): fixed Travis-CI
+- [#9](https://github.com/LaxarJS/laxar-accordion-control/issues/9): renamed repository to match artifact name
 
 
 ## v2.0.0-alpha.2
